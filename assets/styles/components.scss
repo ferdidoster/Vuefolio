@@ -28,7 +28,7 @@
       left: 0;
       top: -1px;
       z-index:1 ;
-      background-color: #ffed00;
+      background-color: $primary-color-bright;
 
       .bg-color{
         position: absolute;
@@ -67,7 +67,7 @@
         position: absolute;
         width: 200%;
         height: 100%;
-        background-color: #ffed00;
+        background-color: $primary-color-bright;
       }
 
       .text-pos{
@@ -103,10 +103,20 @@
     svg{
       width: 26px;
       filter: invert(1);
+      transition: all .3s;
+    }
+
+    .social-link{
+      transition: all .3s;
+
+      &:hover{
+        svg{
+          transition: all .3s;
+          filter:none;
+          fill: $primary-color-bright;
+        }
+      }
     }
   }
 
-  .bg-primary{
-
-  }
 }

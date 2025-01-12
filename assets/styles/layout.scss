@@ -52,16 +52,72 @@ p{
   background-color: $primary-color-dark !important;
 }
 
+
 .navbar{
   background-color: $primary-color-dark;
   color: $secondary-color-bright;
 
   .navbar-brand{
     color: $secondary-color-bright;
+    text-transform: uppercase;
+    position: relative;
+
+    p{
+      position: relative;
+      font-weight: 800;
+      z-index: 10;
+    }
+
+    span{
+      border: 3px solid white;
+      position: absolute;
+      left: .5rem;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:before{
+      content: "";
+      width: 100%;
+      height: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: 6px;
+      z-index:1;
+      background-color: $primary-color-dark;
+    }
   }
+
   .nav-link{
     color: $secondary-color-bright;
     font-weight: 600;
     font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+}
+
+
+footer{
+  a{
+    color: $secondary-color-bright;
+
+    span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:after{
+      content: "|";
+      margin: 0 0.5rem;
+    }
+
+    &:last-of-type{
+      &:after{
+        content: "";
+      }
+    }
   }
 }

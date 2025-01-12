@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="/">My Website</a>
+      <a class="navbar-brand" href="/"><p>Doster</p><span></span></a>
 
       <button
           class="navbar-toggler"
@@ -18,16 +18,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link main-btn" href="/">Home<span></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
+            <a class="nav-link main-btn" href="/about">About<span></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">CV</a>
+            <a class="nav-link main-btn" href="https://doster.at/cv">CV<span></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
+            <a class="nav-link main-btn" href="/contact">Contact<span></span></a>
           </li>
         </ul>
       </div>

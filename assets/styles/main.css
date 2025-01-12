@@ -75,11 +75,54 @@ p {
 }
 .navbar .navbar-brand {
   color: #fbfbfb;
+  text-transform: uppercase;
+  position: relative;
+}
+.navbar .navbar-brand p {
+  position: relative;
+  font-weight: 800;
+  z-index: 10;
+}
+.navbar .navbar-brand span {
+  border: 3px solid white;
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.navbar .navbar-brand:before {
+  content: "";
+  width: 100%;
+  height: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  z-index: 1;
+  background-color: #0d141a;
 }
 .navbar .nav-link {
   color: #fbfbfb;
   font-weight: 600;
   font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: #fbfbfb;
+}
+footer a span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+footer a:after {
+  content: "|";
+  margin: 0 0.5rem;
+}
+footer a:last-of-type:after {
+  content: "";
 }
 
 #header {
@@ -108,7 +151,7 @@ p {
   left: 0;
   top: -1px;
   z-index: 1;
-  background-color: #ffed00;
+  background-color: #0e76a8;
 }
 #header .row .left-col .bg-color {
   position: absolute;
@@ -139,7 +182,7 @@ p {
   position: absolute;
   width: 200%;
   height: 100%;
-  background-color: #ffed00;
+  background-color: #0e76a8;
 }
 #header .row .right-col .text-pos {
   border: 1px solid black;
@@ -166,6 +209,87 @@ p {
 #contact .socials svg {
   width: 26px;
   filter: invert(1);
+  transition: all 0.3s;
+}
+#contact .socials .social-link {
+  transition: all 0.3s;
+}
+#contact .socials .social-link:hover svg {
+  transition: all 0.3s;
+  filter: none;
+  fill: #0e76a8;
+}
+
+.main-btn {
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+.main-btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main-btn span:hover {
+  color: #0e76a8;
+}
+.main-btn span:before, .main-btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #0e76a8;
+  transition: all 0.3s ease;
+}
+.main-btn span:before {
+  width: 2px;
+  height: 0%;
+}
+.main-btn span:after {
+  width: 0%;
+  height: 2px;
+}
+.main-btn span:hover:before {
+  height: 100%;
+}
+.main-btn span:hover:after {
+  width: 100%;
+}
+.main-btn:after, .main-btn:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #0e76a8;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+.main-btn:before {
+  height: 0%;
+  width: 2px;
+}
+.main-btn:after {
+  width: 0%;
+  height: 2px;
+}
+.main-btn:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.main-btn:hover:before {
+  height: 100%;
+}
+.main-btn:hover:after {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
