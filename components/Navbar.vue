@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="/">My Website</a>
 
@@ -24,6 +24,9 @@
             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/contact">CV</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
@@ -31,3 +34,5 @@
     </div>
   </nav>
 </template>
+<script setup lang="ts">
+</script>

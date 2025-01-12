@@ -1,0 +1,67 @@
+
+*{
+  font-family: "Nexa" ;
+}
+
+h2{
+  margin:0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin:0;
+  padding: 0;
+}
+
+.spacer{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.padding{
+  padding: 2rem;
+}
+
+.padding-top{
+  padding-top: 2rem;
+}
+
+.margin-top{
+  margin-top: 2rem;
+}
+
+.padding-bottom{
+  padding-bottom: 2rem;
+}
+
+.padding-sides{
+  padding: 0 2rem 0 2rem;
+}
+
+.container-fluid{
+  max-width: 192rem;
+}
+
+.bg-primary{
+  background-color: $primary-color-dark !important;
+}
+
+.navbar{
+  background-color: $primary-color-dark;
+  color: $secondary-color-bright;
+
+  .navbar-brand{
+    color: $secondary-color-bright;
+  }
+  .nav-link{
+    color: $secondary-color-bright;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+}
