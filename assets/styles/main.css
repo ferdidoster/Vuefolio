@@ -126,7 +126,6 @@ footer a:last-of-type:after {
 }
 
 #header {
-  height: 80vh;
   height: calc(100vh - 20rem);
   max-height: 92rem;
 }
@@ -137,7 +136,7 @@ footer a:last-of-type:after {
   overflow: hidden;
 }
 #header .row .left-col, #header .row .right-col {
-  width: 100%;
+  width: 50%;
   height: 100%;
   position: absolute;
   transition: all 2s;
@@ -149,7 +148,7 @@ footer a:last-of-type:after {
 }
 #header .row .left-col {
   left: 0;
-  top: -1px;
+  top: 0px;
   z-index: 1;
   background-color: #0e76a8;
 }
@@ -161,6 +160,7 @@ footer a:last-of-type:after {
   background-color: #0d141a;
   clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 0%, 100% 0%);
   transition: all 2s;
+  pointer-events: none;
 }
 #header .row .left-col .text-pos {
   border: 1px solid black;
@@ -173,6 +173,10 @@ footer a:last-of-type:after {
   transition: all 2s;
   width: 200%;
   clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 0%, 100% 100%);
+  z-index: 10;
+}
+#header .row .left-col.last-hover {
+  z-index: 10;
 }
 #header .row .right-col {
   right: 0;

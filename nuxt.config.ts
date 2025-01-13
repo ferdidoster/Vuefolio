@@ -10,6 +10,12 @@ export default defineNuxtConfig({
         },
       },
     },
+    define: {
+      'process.env.DEBUG': false,
+    },
   },
-  css: ['@/assets/styles/main.scss'],
+  css: [
+    '@/assets/styles/main.scss',
+    'aos/dist/aos.css'
+  ],
 })
