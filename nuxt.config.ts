@@ -18,4 +18,8 @@ export default defineNuxtConfig({
     '@/assets/styles/main.scss',
     'aos/dist/aos.css'
   ],
+  modules: ['@nuxt/image'],
+  image: {
+    formats: ['webp', 'jpeg', 'png'], // Enable WebP conversion
+  },
 })

@@ -1,135 +1,234 @@
-
-#header{
+#header {
   height: calc(100vh - 20rem);
   max-height: 92rem;
 
-  .row{
+  .row {
     height: 100%;
     position: relative;
     transition: all 2s;
     overflow: hidden;
-    background: radial-gradient(circle, rgba(14,118,168,1) 0%, rgb(32, 112, 152) 95%);
+    background: radial-gradient(circle, rgba(14, 118, 168, 1) 0%, rgb(32, 112, 152) 95%);
 
-    .left-col , .right-col{
-      width: 50%;
-      height: 100%;
-      position: absolute;
-      transition: all 2s;
+    .me {
+      width: auto;
+      max-height: 100%;
+      margin: 0 auto;
+      z-index: 100;
+      pointer-events: none;
 
-      .image-container{
-        width: 100vw;
-        height: 100%;
-        opacity: 0.5;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        height: auto;
       }
     }
 
-    .left-col{
+    .text-pos {
+      width: fit-content;
+      position: absolute;
+      top: 30%;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      margin-top: 0;
+      left: 0;
+      max-height: fit-content;
+      z-index: 50;
+      pointer-events: none;
+
+      h3 {
+        font-size: 2.75rem;
+        color: rgba(244, 243, 243, 0.7);
+      }
+    }
+
+    .left-col,
+    .right-col {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      transition: width 1.5s ease-in-out, transform 1s ease-in-out;
+
+      .image-container {
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        transition: all 2s;
+
+        img {
+          min-height: 100%;
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 1.5s ease-in-out;
+        }
+
+        img.active {
+          opacity: 1;
+        }
+      }
+    }
+
+    .left-col {
       left: 0;
       top: 0px;
-      z-index:1 ;
-      //background-color: $primary-color-bright;
+      z-index: 1;
 
-      .bg-color{
+      .bg-color {
         position: absolute;
         width: 150%;
         height: 100%;
         left: 0;
         background-color: $primary-color-dark;
         clip-path: polygon(0% 200%, 0% 0%, 100% 0%, 100% 0%, 100% 0%);
-        transition: all 2s;
+        transition: clip-path 1.5s ease-in-out, width 1.5s ease-in-out, background-color 1s ease; // ✅ Improved background transition
         pointer-events: none;
+
+        @include media-breakpoint-down(lg) {
+          background: rgba(255, 255, 255, 0);
+        }
       }
 
-      .text-pos{
-        border: 1px solid black;
+      .text-pos {
         width: fit-content;
         position: absolute;
-        top: 10%;
-        left: 2rem;
+        left: 10%;
+        margin-left: 0;
+        z-index: 50;
+        pointer-events: none;
+
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
       }
 
+      .image-container {
+        clip-path: polygon(75% 100%, 0% 200%, 75% 0%, 100% 0%, 100% 100%);
+        pointer-events: none;
 
-      &:hover{
-        .bg-color{
-          transition: all 2s;
+        img {
+          margin: 0;
+          width: 802px;
+          height: auto;
+          min-width: 100%;
+          object-fit: cover;
+        }
+
+        @include media-breakpoint-down(lg) {
+          background-color: #ffed00;
+        }
+      }
+
+      &:hover {
+        .bg-color {
+          transition: clip-path 1.5s ease-in-out, width 1.5s ease-in-out, background-color 1s ease;
           width: 200%;
           clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 0%, 100% 100%);
           z-index: 10;
+
+          @include media-breakpoint-down(lg) {
+            background-color: none;
+          }
         }
       }
 
-      &.not-hovered{
-        .bg-color{
-          clip-path: polygon(0% 100%, 0% 0%, 00% 0%, 0% 100%, 0% 100%);
+      &.not-hovered {
+        .bg-color {
+          clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 0% 100%, 0% 100%);
+
+          @include media-breakpoint-down(lg) {
+            background-color: none;
+          }
         }
       }
 
-      &.last-hover{
+      &.last-hover {
         z-index: 10;
       }
     }
 
-    .right-col{
+    .right-col {
       right: 0;
       z-index: 0;
 
-
-      .bg-color{
+      .bg-color {
         position: absolute;
-        width: 200%;
+        width: 100%;
         height: 100%;
-        //background-color: $primary-color-bright;
+        transition: clip-path 1.5s ease-in-out, width 1.5s ease-in-out, background-color 1s ease;
       }
 
-      .text-pos{
-        border: 1px solid black;
+      .text-pos {
         width: fit-content;
         position: absolute;
-        top: 10%;
-        right: 2rem;
+        right: 10%;
+        margin-right: 0;
+        z-index: 50;
+        pointer-events: none;
+
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
       }
 
-      &:hover{
-        width: 100%;
-        transition: all 5s;
+      .image-container {
+        left: -100%;
+        clip-path: polygon(0% 175%, 0% 0%, 100% 0%, 100% 0%, 70% 0%);
+        pointer-events: none;
+
+        img {
+          min-width: 100%;
+          pointer-events: none;
+        }
+      }
+
+      &:hover {
+        transition: width 1.5s ease-in-out;
+
+        .image-container {
+          transform: translateY(0);
+          transition: transform 1.5s ease-in-out;
+        }
       }
     }
-
   }
 
+  @include media-breakpoint-down(lg) {
+    max-height: 50vh;
+  }
 
+  @include media-breakpoint-down(sm) {
+    max-height: 35vh;
+  }
 }
 
-#contact{
+#contact {
   color: $secondary-color-bright;
 
-  .letter-svg{
+  .letter-svg {
     width: 4rem;
     filter: invert(1);
   }
 
-  a{
+  a {
     color: $secondary-color-bright;
   }
 
-  .socials{
-    svg{
+  .socials {
+    svg {
       width: 26px;
       filter: invert(1);
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
-    .social-link{
-      transition: all .3s;
+    .social-link {
+      transition: all 0.3s;
 
-      &:hover{
-        svg{
-          transition: all .3s;
-          filter:none;
+      &:hover {
+        svg {
+          transition: all 0.3s;
+          filter: none;
           fill: $primary-color-bright;
         }
       }
     }
   }
-
 }
