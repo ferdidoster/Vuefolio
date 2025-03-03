@@ -20,6 +20,9 @@ export default defineNuxtConfig({
   ],
   modules: ['@nuxt/image'],
   image: {
-    formats: ['webp', 'jpeg', 'png'], // Enable WebP conversion
+    formats: ['webp', 'jpeg', 'png'],
   },
+  plugins: [
+    { src: '~/plugins/bootstrap.client.ts', mode: 'client' } // Ensure 'mode: client' is set
+  ],
 })
