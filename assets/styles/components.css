@@ -1,0 +1,50 @@
+#header {
+  height: 80vh;
+}
+#header .row {
+  height: 100%;
+  position: relative;
+}
+#header .row .left-col, #header .row .right-col {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  transition: all 2s;
+  overflow: hidden;
+}
+#header .row .left-col .image-container, #header .row .right-col .image-container {
+  width: 100vw;
+  height: 100%;
+  opacity: 0.5;
+}
+#header .row .left-col:hover, #header .row .right-col:hover {
+  width: 100%;
+  transition: all 5s;
+}
+#header .row .left-col {
+  background-color: #0d141a;
+  left: 0;
+}
+#header .row .left-col .text-pos {
+  border: 1px solid black;
+  width: fit-content;
+  position: absolute;
+  top: 10%;
+  left: 2rem;
+}
+#header .row .right-col {
+  background-color: #ffed00;
+  right: 0;
+}
+#header .row .right-col .text-pos {
+  border: 1px solid black;
+  width: fit-content;
+  position: absolute;
+  top: 10%;
+  right: 2rem;
+}
+#header .row .last-hover {
+  z-index: 10;
+}
+
+/*# sourceMappingURL=components.css.map */

@@ -1,0 +1,68 @@
+.main-btn {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, rgb(0, 172, 238) 0%, rgb(2, 126, 251) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.main-btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main-btn span:hover {
+  color: rgb(2, 126, 251);
+}
+.main-btn span:before, .main-btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgb(2, 126, 251);
+  transition: all 0.3s ease;
+}
+.main-btn span:before {
+  width: 2px;
+  height: 0%;
+}
+.main-btn span:after {
+  width: 0%;
+  height: 2px;
+}
+.main-btn span:hover:before {
+  height: 100%;
+}
+.main-btn span span:hover:after {
+  width: 100%;
+}
+.main-btn:after, .main-btn:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgb(2, 126, 251);
+  transition: all 0.3s ease;
+}
+.main-btn:before {
+  height: 0%;
+  width: 2px;
+}
+.main-btn:after {
+  width: 0%;
+  height: 2px;
+}
+.main-btn:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.main-btn:hover:before {
+  height: 100%;
+}
+.main-btn:hover:after {
+  width: 100%;
+}
+
+/*# sourceMappingURL=buttons.css.map */
