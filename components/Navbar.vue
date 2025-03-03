@@ -21,7 +21,7 @@
             <a class="nav-link main-btn" href="/" data-aos="fade-up">Home<span></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link main-btn" href="#aboutme"
+            <a class="nav-link main-btn" href="aboutme"
                data-aos="fade-up"
                data-aos-delay="200"
                data-aos-offset="300">About<span></span></a>
@@ -33,7 +33,7 @@
                data-aos-offset="300">CV<span></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link main-btn" href="/contact"
+            <a class="nav-link main-btn" href="/#contact"
                data-aos="fade-up"
                data-aos-delay="500"
                data-aos-offset="300">Contact<span></span></a>

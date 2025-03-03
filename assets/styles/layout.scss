@@ -10,6 +10,11 @@ body{
 h2{
   margin:0;
   padding: 0;
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+h3{
+  font-size: calc(1rem + 0.6vw);
 }
 
 a{
@@ -26,6 +31,10 @@ p{
 .spacer{
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.spacer-top{
+  margin-top: 4rem;
 }
 
 .padding{
@@ -56,6 +65,9 @@ p{
   background-color: $primary-color-dark !important;
 }
 
+.bg-secondary{
+  background-color: $primary-color-bright !important;
+}
 
 .navbar{
   background-color: $primary-color-dark;

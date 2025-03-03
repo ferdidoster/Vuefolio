@@ -1,12 +1,15 @@
 <template>
   <div class="container spacer" id="contact" >
-    <div class="bg-primary padding d-flex flex-column justify-content-center">
+    <div class="bg-primary padding justify-content-center">
       <div class="text-center"
            data-aos="fade-up"
            data-aos-anchor="#contact"  >
          <h2>Contact me</h2>
-        <p>
-          <a href="mailto:ferdiedoster@gmail.com">ferdiedoster@gmail.com</a>
+          <a href="mailto:ferdiedoster@gmail.com"  class="main-btn text-uppercase mt-2 d-inline-block">ferdiedoster@gmail.com
+            <span></span>
+          </a>
+        <p class="mt-3">
+          Based in Germany – Available for remote & on-site work
         </p>
       </div>
       <div class="socials text-center padding-top d-flex flex-row justify-content-center">

@@ -1,7 +1,6 @@
 <template>
   <div id="header" class="container-fluid">
-    <div class="row">
-      <!-- Game Developer Section -->
+    <div class="row"> 
       <div
           id="game-dev"
           class="left-col p-0"
@@ -24,8 +23,7 @@
           </div>
         </div>
       </div>
-
-      <!-- Web Developer Section -->
+ 
       <div
           id="frontend-dev"
           class="right-col p-0"
@@ -48,8 +46,7 @@
           </div>
         </div>
       </div>
-
-      <!-- Profile Image -->
+ 
       <img class="me" loading="lazy" src="/optimized-images/me-nobg.webp" style="pointer-events: none" alt="Example Image" />
     </div>
   </div>

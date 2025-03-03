@@ -1,18 +1,26 @@
 @font-face {
   font-family: 'Nexa';
-  src: url('public/fonts/nexa/Nexa Regular.otf') format('opentype');
+  src: url('/fonts/nexa/Nexa-Regular.woff2') format('woff2'),
+  url('/fonts/nexa/Nexa-Regular.woff') format('woff'),
+  url('/fonts/nexa/Nexa-Regular.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Nexa';
-  src: url('public/fonts/nexa/Nexa Bold.otf') format('opentype');
+  src: url('/fonts/nexa/Nexa-Bold.woff2') format('woff2'),
+  url('/fonts/nexa/Nexa-Bold.woff') format('woff'),
+  url('/fonts/nexa/Nexa-Bold.otf') format('opentype');
   font-weight: 600;
-  font-style: Bold;
+  font-style: normal;
 }
+
 @font-face {
   font-family: 'Nexa';
-  src: url('public/fonts/nexa/Nexa Light.otf') format('opentype');
+  src: url('/fonts/nexa/Nexa-Light.woff2') format('woff2'),
+  url('/fonts/nexa/Nexa-Light.woff') format('woff'),
+  url('/fonts/nexa/Nexa-Light.otf') format('opentype');
   font-weight: 100;
-  font-style: light;
+  font-style: normal;
 }

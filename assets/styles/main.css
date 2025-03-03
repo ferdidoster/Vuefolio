@@ -1,9 +1,8 @@
 /* Error: Undefined mixin.
  *    ,
  * 19 | /       @include media-breakpoint-down(sm) {
- * 20 | |         width: 100%;
- * 21 | |         height: auto;
- * 22 | \       }
+ * 20 | |         height: auto;
+ * 21 | \       }
  *    '
  *   components.scss 19:7  @import
  *   main.scss 5:9         root stylesheet */
@@ -16,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c        @include media-breakpoint-down(sm) {\a 20 \2502  \2502          width: 100%;\a 21 \2502  \2502          height: auto;\a 22 \2502  \2514        }\a    \2575 \a   components.scss 19:7  @import\a   main.scss 5:9         root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c        @include media-breakpoint-down(sm) {\a 20 \2502  \2502          height: auto;\a 21 \2502  \2514        }\a    \2575 \a   components.scss 19:7  @import\a   main.scss 5:9         root stylesheet";
 }
