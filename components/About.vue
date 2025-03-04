@@ -6,9 +6,9 @@
              data-aos="fade-left"
              data-aos-anchor="#about">
           <h2>About Me</h2>
-          <p>Hey, I’m <strong>Ferdinand Doster</strong>, a frontend developer with a passion for creating clean, responsive, and well-structured websites. I specialize in building fast and user-friendly online experiences using <strong>Shopware, TYPO3, JavaScript, and PHP</strong>.</p>
+          <p class="mt-3">Hey, I’m <strong>Ferdinand Doster</strong>, a frontend developer with a passion for creating clean, responsive, and well-structured websites. I specialize in building fast and user-friendly online experiences using <strong>Shopware, TYPO3, JavaScript, and PHP</strong>.</p>
 
-          <p>My interest in web development started when I was a teenager, experimenting with HTML and CSS to build small fan sites. What began as a hobby quickly turned into a career, and over the years, I’ve worked on a variety of projects, from e-commerce platforms to custom CMS solutions. In early 2024, I transitioned from jQuery to React and Vue.js to stay up to date with modern development trends.</p>
+          <p class="mt-3">My interest in web development started when I was a teenager, experimenting with HTML and CSS to build small fan sites. What began as a hobby quickly turned into a career, and over the years, I’ve worked on a variety of projects, from e-commerce platforms to custom CMS solutions. In early 2024, I transitioned from jQuery to React and Vue.js to stay up to date with modern development trends.</p>
 
           <div class="row justify-content-center">
             <div class="col-12 col-lg-12">

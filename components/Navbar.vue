@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="/"data-aos="fade-left"><p>Doster</p><span></span></a>
+      <a class="navbar-brand" href="/"data-aos="fade-left">
+        <img class="me" loading="lazy" src="/images/Logo.PNG" alt="Example Image" />
+      </a>
 
       <button
           class="navbar-toggler"
