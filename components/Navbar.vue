@@ -29,7 +29,7 @@
                data-aos-offset="300">About<span></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link main-btn" href="https://doster.at/cv"
+            <a class="nav-link main-btn" target="_blank" href="/images/cv-en.pdf"
                data-aos="fade-up"
                data-aos-delay="400"
                data-aos-offset="300">CV<span></span></a>
